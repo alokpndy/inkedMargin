@@ -22,3 +22,9 @@ UK English, US English, Portuguese, Russian, Deutsch, Français, Español, Itali
 
 # Known Issue
 1. No progress bar to show ongoing sync. Hence wait few minutes, the UITableView will refresh on completion.
+
+
+# License
+
+This is all MIT licensed.
+
