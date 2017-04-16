@@ -8,7 +8,7 @@ inkedMargin is a tool to import notes and highlights from Kindle devices. This s
 UK English, US English, Portuguese, Russian, Deutsch, Français, Español, Italiano, Japanese, Netherlands.
 
 # Installation
-## Note: Please allow installation from unidentified developer from System Preference. 
+### Note: Please allow installation from unidentified developer from System Preference. 
 1. Clone project to local drive and use Xcode to create archive.
 2. Download from [here](https://mega.nz/#!QPAlXJiQ!Mc7Vj8diNVmXvE42t7IbmteM0W8_B0o2SWzKf5Ic_e0)
 
