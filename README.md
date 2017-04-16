@@ -18,7 +18,7 @@ UK English, US English, Portuguese, Russian, Deutsch, Français, Español, Itali
 3. Select and open MyClipping.txt file from the finder window sheet. 
 4. Wait for sync to complete.
 
-* Clock button will show newly synced books.
+##### Tip: Clock button will show newly synced books.
 
 # Known Issue
 1. No progress bar to show ongoing sync. Hence wait few minutes, the UITableView will refresh on completion.
