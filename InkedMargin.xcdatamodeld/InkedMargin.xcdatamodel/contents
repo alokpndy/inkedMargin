@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Author" syncable="YES"/>
+        <relationship name="booksByAuthor" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="byAuthor" inverseEntity="Book" syncable="YES"/>
+        <relationship name="fromGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="allAuthors" inverseEntity="Group" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" defaultValueString="Title" syncable="YES"/>
+        <relationship name="byAuthor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="booksByAuthor" inverseEntity="Author" syncable="YES"/>
+        <relationship name="highlightsInBook" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Highlight" inverseName="fromBook" inverseEntity="Highlight" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="all" optional="YES" attributeType="String" defaultValueString="All Authors" syncable="YES"/>
+        <relationship name="allAuthors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Author" inverseName="fromGroup" inverseEntity="Author" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="all"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Highlight" representedClassName="Highlight" syncable="YES">
+        <attribute name="attributedBody" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="body" optional="YES" attributeType="String" defaultValueString="Highlights" syncable="YES"/>
+        <attribute name="dateOfHighlight" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="favIconInverter" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="highlightLocationEnd" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="highlightLocationStart" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="highlightPageEnd" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="highlightPageStart" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isHighlightFavourite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="kindleNote" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationLabel" optional="YES" attributeType="String" defaultValueString="Location" syncable="YES"/>
+        <attribute name="markHighlightToDelete" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="fromBook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="highlightsInBook" inverseEntity="Book" syncable="YES"/>
+        <relationship name="notesOnHighlight" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="fromHighlight" inverseEntity="Note" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="dateOfHighlight"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="noteByUser" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="fromHighlight" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Highlight" inverseName="notesOnHighlight" inverseEntity="Highlight" syncable="YES"/>
+    </entity>
+    <entity name="TimeStamp" representedClassName="TimeStamp" syncable="YES">
+        <attribute name="highlightCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastAddedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="noteCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Author" positionX="-360" positionY="-108" width="128" height="88"/>
+        <element name="Book" positionX="-351" positionY="38" width="128" height="88"/>
+        <element name="Group" positionX="-378" positionY="-261" width="128" height="73"/>
+        <element name="Highlight" positionX="-54" positionY="-162" width="128" height="255"/>
+        <element name="Note" positionX="-110" positionY="170" width="128" height="73"/>
+        <element name="TimeStamp" positionX="-207" positionY="-99" width="128" height="90"/>
+    </elements>
+</model>

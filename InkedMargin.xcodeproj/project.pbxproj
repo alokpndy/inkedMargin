@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F00FAD091C57B55800B7B597 /* SyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = F00FAD081C57B55800B7B597 /* SyncController.m */; settings = {ASSET_TAGS = (); }; };
+		F01574B91C54A361007CCECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01574B81C54A361007CCECF /* AppDelegate.m */; };
+		F01574BC1C54A361007CCECF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F01574BB1C54A361007CCECF /* main.m */; };
+		F01574BE1C54A361007CCECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01574BD1C54A361007CCECF /* Assets.xcassets */; };
+		F01574C91C54A3AE007CCECF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01574C81C54A3AE007CCECF /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
+		F01574CE1C54A474007CCECF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01574CD1C54A474007CCECF /* CoreData.framework */; };
+		F01574D71C54A4FE007CCECF /* PersistClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F01574D11C54A4FE007CCECF /* PersistClass.m */; settings = {ASSET_TAGS = (); }; };
+		F01574D81C54A4FE007CCECF /* AP_TextExtract.m in Sources */ = {isa = PBXBuildFile; fileRef = F01574D31C54A4FE007CCECF /* AP_TextExtract.m */; settings = {ASSET_TAGS = (); }; };
+		F01574D91C54A4FE007CCECF /* EECoreStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F01574D51C54A4FE007CCECF /* EECoreStack.m */; settings = {ASSET_TAGS = (); }; };
+		F01574DF1C54A5CA007CCECF /* InkedMargin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F01574DD1C54A5CA007CCECF /* InkedMargin.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		F01574FB1C54A975007CCECF /* HighlightTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F01574FA1C54A975007CCECF /* HighlightTableController.m */; settings = {ASSET_TAGS = (); }; };
+		F03C29821C574E4F00ECEDA7 /* SyncingProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03C29811C574E4F00ECEDA7 /* SyncingProgress.xib */; settings = {ASSET_TAGS = (); }; };
+		F04D7B431C5F3453008ECDF1 /* APTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D7B421C5F3453008ECDF1 /* APTableCellView.m */; settings = {ASSET_TAGS = (); }; };
+		F04D7B461C5F36A7008ECDF1 /* APTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04D7B451C5F36A7008ECDF1 /* APTableView.m */; settings = {ASSET_TAGS = (); }; };
+		F06EAA611C6871E4005ED2D0 /* APTextViewSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F06EAA601C6871E4005ED2D0 /* APTextViewSubClass.m */; settings = {ASSET_TAGS = (); }; };
+		F07267581C5C88DA00F35571 /* AP_SplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07267571C5C88DA00F35571 /* AP_SplitController.m */; settings = {ASSET_TAGS = (); }; };
+		F07C24F21C58BF5200C40F75 /* KindleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07C24F11C58BF5200C40F75 /* KindleView.m */; settings = {ASSET_TAGS = (); }; };
+		F0888D201C71F04400C1632D /* EmptyDatabaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0888D1F1C71F04400C1632D /* EmptyDatabaseView.xib */; settings = {ASSET_TAGS = (); }; };
+		F0888D261C71F19700C1632D /* EmptyViewDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = F0888D251C71F19700C1632D /* EmptyViewDrawing.m */; settings = {ASSET_TAGS = (); }; };
+		F08959711C5526B2007909A3 /* MyStyleKitName.m in Sources */ = {isa = PBXBuildFile; fileRef = F089596F1C5526B2007909A3 /* MyStyleKitName.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB23F1C8841790068449D /* Note+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB2281C8841790068449D /* Note+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2401C8841790068449D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB22A1C8841790068449D /* Note.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2411C8841790068449D /* TimeStamp+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB22C1C8841790068449D /* TimeStamp+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2421C8841790068449D /* TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB22E1C8841790068449D /* TimeStamp.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2431C88417A0068449D /* Group+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB2301C8841790068449D /* Group+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2441C88417A0068449D /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB2321C8841790068449D /* Group.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2451C88417A0068449D /* Author+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB2341C8841790068449D /* Author+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2461C88417A0068449D /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB2361C8841790068449D /* Author.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2471C88417A0068449D /* Book+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB2381C8841790068449D /* Book+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2481C88417A0068449D /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB23A1C8841790068449D /* Book.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB2491C88417A0068449D /* Highlight+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB23C1C8841790068449D /* Highlight+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		F0CFB24A1C88417A0068449D /* Highlight.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFB23E1C8841790068449D /* Highlight.m */; settings = {ASSET_TAGS = (); }; };
+		F0E498391C6B10B300A9138C /* AP_SplitViewSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E498381C6B10B300A9138C /* AP_SplitViewSubClass.m */; settings = {ASSET_TAGS = (); }; };
+		F0E51BD41C72D70D003188A5 /* FirstTimeSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E51BD31C72D70D003188A5 /* FirstTimeSyncController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F00FAD071C57B55800B7B597 /* SyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncController.h; sourceTree = "<group>"; };
+		F00FAD081C57B55800B7B597 /* SyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncController.m; sourceTree = "<group>"; };
+		F01574B41C54A361007CCECF /* InkedMargin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkedMargin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01574B71C54A361007CCECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F01574B81C54A361007CCECF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F01574BB1C54A361007CCECF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F01574BD1C54A361007CCECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F01574C21C54A361007CCECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01574C81C54A3AE007CCECF /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F01574CD1C54A474007CCECF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F01574D01C54A4FE007CCECF /* PersistClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistClass.h; sourceTree = "<group>"; };
+		F01574D11C54A4FE007CCECF /* PersistClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistClass.m; sourceTree = "<group>"; };
+		F01574D21C54A4FE007CCECF /* AP_TextExtract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AP_TextExtract.h; sourceTree = "<group>"; };
+		F01574D31C54A4FE007CCECF /* AP_TextExtract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AP_TextExtract.m; sourceTree = "<group>"; };
+		F01574D41C54A4FE007CCECF /* EECoreStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EECoreStack.h; sourceTree = "<group>"; };
+		F01574D51C54A4FE007CCECF /* EECoreStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EECoreStack.m; sourceTree = "<group>"; };
+		F01574DE1C54A5CA007CCECF /* InkedMargin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InkedMargin.xcdatamodel; sourceTree = "<group>"; };
+		F01574F91C54A974007CCECF /* HighlightTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightTableController.h; sourceTree = "<group>"; };
+		F01574FA1C54A975007CCECF /* HighlightTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightTableController.m; sourceTree = "<group>"; };
+		F03C29811C574E4F00ECEDA7 /* SyncingProgress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SyncingProgress.xib; sourceTree = "<group>"; };
+		F04D7B411C5F3452008ECDF1 /* APTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APTableCellView.h; path = ../APTableCellView.h; sourceTree = "<group>"; };
+		F04D7B421C5F3453008ECDF1 /* APTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APTableCellView.m; path = ../APTableCellView.m; sourceTree = "<group>"; };
+		F04D7B441C5F36A7008ECDF1 /* APTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTableView.h; sourceTree = "<group>"; };
+		F04D7B451C5F36A7008ECDF1 /* APTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTableView.m; sourceTree = "<group>"; };
+		F06EAA5F1C6871E4005ED2D0 /* APTextViewSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTextViewSubClass.h; sourceTree = "<group>"; };
+		F06EAA601C6871E4005ED2D0 /* APTextViewSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTextViewSubClass.m; sourceTree = "<group>"; };
+		F07267561C5C88DA00F35571 /* AP_SplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AP_SplitController.h; path = ../AP_SplitController.h; sourceTree = "<group>"; };
+		F07267571C5C88DA00F35571 /* AP_SplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AP_SplitController.m; path = ../AP_SplitController.m; sourceTree = "<group>"; };
+		F07C24F01C58BF5200C40F75 /* KindleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KindleView.h; sourceTree = "<group>"; };
+		F07C24F11C58BF5200C40F75 /* KindleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KindleView.m; sourceTree = "<group>"; };
+		F080A9D21C6B3C0E00A194C3 /* InkedMargin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = InkedMargin.entitlements; sourceTree = "<group>"; };
+		F0888D1F1C71F04400C1632D /* EmptyDatabaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyDatabaseView.xib; sourceTree = "<group>"; };
+		F0888D241C71F19700C1632D /* EmptyViewDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewDrawing.h; sourceTree = "<group>"; };
+		F0888D251C71F19700C1632D /* EmptyViewDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewDrawing.m; sourceTree = "<group>"; };
+		F089596F1C5526B2007909A3 /* MyStyleKitName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStyleKitName.m; sourceTree = "<group>"; };
+		F08959701C5526B2007909A3 /* MyStyleKitName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStyleKitName.h; sourceTree = "<group>"; };
+		F0CFB2271C8841790068449D /* Note+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Note+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0CFB2281C8841790068449D /* Note+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0CFB2291C8841790068449D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		F0CFB22A1C8841790068449D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		F0CFB22B1C8841790068449D /* TimeStamp+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TimeStamp+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0CFB22C1C8841790068449D /* TimeStamp+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TimeStamp+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0CFB22D1C8841790068449D /* TimeStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStamp.h; sourceTree = "<group>"; };
+		F0CFB22E1C8841790068449D /* TimeStamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStamp.m; sourceTree = "<group>"; };
+		F0CFB22F1C8841790068449D /* Group+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Group+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0CFB2301C8841790068449D /* Group+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Group+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0CFB2311C8841790068449D /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		F0CFB2321C8841790068449D /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		F0CFB2331C8841790068449D /* Author+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Author+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0CFB2341C8841790068449D /* Author+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Author+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0CFB2351C8841790068449D /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		F0CFB2361C8841790068449D /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		F0CFB2371C8841790068449D /* Book+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Book+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0CFB2381C8841790068449D /* Book+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Book+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0CFB2391C8841790068449D /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F0CFB23A1C8841790068449D /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		F0CFB23B1C8841790068449D /* Highlight+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Highlight+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0CFB23C1C8841790068449D /* Highlight+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Highlight+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0CFB23D1C8841790068449D /* Highlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Highlight.h; sourceTree = "<group>"; };
+		F0CFB23E1C8841790068449D /* Highlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Highlight.m; sourceTree = "<group>"; };
+		F0E498371C6B10B300A9138C /* AP_SplitViewSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AP_SplitViewSubClass.h; sourceTree = "<group>"; };
+		F0E498381C6B10B300A9138C /* AP_SplitViewSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AP_SplitViewSubClass.m; sourceTree = "<group>"; };
+		F0E51BD21C72D70D003188A5 /* FirstTimeSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTimeSyncController.h; sourceTree = "<group>"; };
+		F0E51BD31C72D70D003188A5 /* FirstTimeSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTimeSyncController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F01574B11C54A361007CCECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01574CE1C54A474007CCECF /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F00FAD0A1C57BB0600B7B597 /* SyncController */ = {
+			isa = PBXGroup;
+			children = (
+				F00FAD071C57B55800B7B597 /* SyncController.h */,
+				F00FAD081C57B55800B7B597 /* SyncController.m */,
+				F03C29811C574E4F00ECEDA7 /* SyncingProgress.xib */,
+				F0E51BD21C72D70D003188A5 /* FirstTimeSyncController.h */,
+				F0E51BD31C72D70D003188A5 /* FirstTimeSyncController.m */,
+				F0888D1F1C71F04400C1632D /* EmptyDatabaseView.xib */,
+				F0888D241C71F19700C1632D /* EmptyViewDrawing.h */,
+				F0888D251C71F19700C1632D /* EmptyViewDrawing.m */,
+				F07C24F01C58BF5200C40F75 /* KindleView.h */,
+				F07C24F11C58BF5200C40F75 /* KindleView.m */,
+			);
+			name = SyncController;
+			path = InkedMargin;
+			sourceTree = "<group>";
+		};
+		F01574AB1C54A361007CCECF = {
+			isa = PBXGroup;
+			children = (
+				F08959721C5526B8007909A3 /* StyleKit */,
+				F01574F81C54A70F007CCECF /* ModelObject */,
+				F01574DC1C54A520007CCECF /* Saving to Core Data */,
+				F01574DB1C54A518007CCECF /* Parser */,
+				F01574DA1C54A509007CCECF /* Stack */,
+				F01574FC1C54A97A007CCECF /* TableController */,
+				F09788EE1C68DB3200858D67 /* TextView Subclasses */,
+				F09788EF1C68DB4800858D67 /* SplitView  */,
+				F00FAD0A1C57BB0600B7B597 /* SyncController */,
+				F01574CD1C54A474007CCECF /* CoreData.framework */,
+				F01574B61C54A361007CCECF /* InkedMargin */,
+				F01574B51C54A361007CCECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F01574B51C54A361007CCECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F01574B41C54A361007CCECF /* InkedMargin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F01574B61C54A361007CCECF /* InkedMargin */ = {
+			isa = PBXGroup;
+			children = (
+				F080A9D21C6B3C0E00A194C3 /* InkedMargin.entitlements */,
+				F01574B71C54A361007CCECF /* AppDelegate.h */,
+				F01574B81C54A361007CCECF /* AppDelegate.m */,
+				F01574BD1C54A361007CCECF /* Assets.xcassets */,
+				F01574C81C54A3AE007CCECF /* MainMenu.xib */,
+				F01574C21C54A361007CCECF /* Info.plist */,
+				F01574BA1C54A361007CCECF /* Supporting Files */,
+			);
+			path = InkedMargin;
+			sourceTree = "<group>";
+		};
+		F01574BA1C54A361007CCECF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01574BB1C54A361007CCECF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F01574DA1C54A509007CCECF /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				F01574DD1C54A5CA007CCECF /* InkedMargin.xcdatamodeld */,
+				F01574D41C54A4FE007CCECF /* EECoreStack.h */,
+				F01574D51C54A4FE007CCECF /* EECoreStack.m */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		F01574DB1C54A518007CCECF /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				F01574D21C54A4FE007CCECF /* AP_TextExtract.h */,
+				F01574D31C54A4FE007CCECF /* AP_TextExtract.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		F01574DC1C54A520007CCECF /* Saving to Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F01574D01C54A4FE007CCECF /* PersistClass.h */,
+				F01574D11C54A4FE007CCECF /* PersistClass.m */,
+			);
+			name = "Saving to Core Data";
+			sourceTree = "<group>";
+		};
+		F01574F81C54A70F007CCECF /* ModelObject */ = {
+			isa = PBXGroup;
+			children = (
+				F0CFB2271C8841790068449D /* Note+CoreDataProperties.h */,
+				F0CFB2281C8841790068449D /* Note+CoreDataProperties.m */,
+				F0CFB2291C8841790068449D /* Note.h */,
+				F0CFB22A1C8841790068449D /* Note.m */,
+				F0CFB22B1C8841790068449D /* TimeStamp+CoreDataProperties.h */,
+				F0CFB22C1C8841790068449D /* TimeStamp+CoreDataProperties.m */,
+				F0CFB22D1C8841790068449D /* TimeStamp.h */,
+				F0CFB22E1C8841790068449D /* TimeStamp.m */,
+				F0CFB22F1C8841790068449D /* Group+CoreDataProperties.h */,
+				F0CFB2301C8841790068449D /* Group+CoreDataProperties.m */,
+				F0CFB2311C8841790068449D /* Group.h */,
+				F0CFB2321C8841790068449D /* Group.m */,
+				F0CFB2331C8841790068449D /* Author+CoreDataProperties.h */,
+				F0CFB2341C8841790068449D /* Author+CoreDataProperties.m */,
+				F0CFB2351C8841790068449D /* Author.h */,
+				F0CFB2361C8841790068449D /* Author.m */,
+				F0CFB2371C8841790068449D /* Book+CoreDataProperties.h */,
+				F0CFB2381C8841790068449D /* Book+CoreDataProperties.m */,
+				F0CFB2391C8841790068449D /* Book.h */,
+				F0CFB23A1C8841790068449D /* Book.m */,
+				F0CFB23B1C8841790068449D /* Highlight+CoreDataProperties.h */,
+				F0CFB23C1C8841790068449D /* Highlight+CoreDataProperties.m */,
+				F0CFB23D1C8841790068449D /* Highlight.h */,
+				F0CFB23E1C8841790068449D /* Highlight.m */,
+			);
+			name = ModelObject;
+			sourceTree = "<group>";
+		};
+		F01574FC1C54A97A007CCECF /* TableController */ = {
+			isa = PBXGroup;
+			children = (
+				F01574F91C54A974007CCECF /* HighlightTableController.h */,
+				F01574FA1C54A975007CCECF /* HighlightTableController.m */,
+				F04D7B441C5F36A7008ECDF1 /* APTableView.h */,
+				F04D7B451C5F36A7008ECDF1 /* APTableView.m */,
+				F04D7B411C5F3452008ECDF1 /* APTableCellView.h */,
+				F04D7B421C5F3453008ECDF1 /* APTableCellView.m */,
+			);
+			name = TableController;
+			path = InkedMargin;
+			sourceTree = "<group>";
+		};
+		F08959721C5526B8007909A3 /* StyleKit */ = {
+			isa = PBXGroup;
+			children = (
+				F089596F1C5526B2007909A3 /* MyStyleKitName.m */,
+				F08959701C5526B2007909A3 /* MyStyleKitName.h */,
+			);
+			name = StyleKit;
+			sourceTree = "<group>";
+		};
+		F09788EE1C68DB3200858D67 /* TextView Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				F06EAA5F1C6871E4005ED2D0 /* APTextViewSubClass.h */,
+				F06EAA601C6871E4005ED2D0 /* APTextViewSubClass.m */,
+			);
+			name = "TextView Subclasses";
+			path = InkedMargin;
+			sourceTree = "<group>";
+		};
+		F09788EF1C68DB4800858D67 /* SplitView  */ = {
+			isa = PBXGroup;
+			children = (
+				F07267561C5C88DA00F35571 /* AP_SplitController.h */,
+				F07267571C5C88DA00F35571 /* AP_SplitController.m */,
+				F0E498371C6B10B300A9138C /* AP_SplitViewSubClass.h */,
+				F0E498381C6B10B300A9138C /* AP_SplitViewSubClass.m */,
+			);
+			name = "SplitView ";
+			path = InkedMargin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F01574B31C54A361007CCECF /* InkedMargin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01574C51C54A361007CCECF /* Build configuration list for PBXNativeTarget "InkedMargin" */;
+			buildPhases = (
+				F01574B01C54A361007CCECF /* Sources */,
+				F01574B11C54A361007CCECF /* Frameworks */,
+				F01574B21C54A361007CCECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InkedMargin;
+			productName = InkedMargin;
+			productReference = F01574B41C54A361007CCECF /* InkedMargin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F01574AC1C54A361007CCECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "alok pandey";
+				TargetAttributes = {
+					F01574B31C54A361007CCECF = {
+						CreatedOnToolsVersion = 7.0.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F01574AF1C54A361007CCECF /* Build configuration list for PBXProject "InkedMargin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F01574AB1C54A361007CCECF;
+			productRefGroup = F01574B51C54A361007CCECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F01574B31C54A361007CCECF /* InkedMargin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F01574B21C54A361007CCECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01574BE1C54A361007CCECF /* Assets.xcassets in Resources */,
+				F0888D201C71F04400C1632D /* EmptyDatabaseView.xib in Resources */,
+				F01574C91C54A3AE007CCECF /* MainMenu.xib in Resources */,
+				F03C29821C574E4F00ECEDA7 /* SyncingProgress.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F01574B01C54A361007CCECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CFB2491C88417A0068449D /* Highlight+CoreDataProperties.m in Sources */,
+				F0CFB2411C8841790068449D /* TimeStamp+CoreDataProperties.m in Sources */,
+				F00FAD091C57B55800B7B597 /* SyncController.m in Sources */,
+				F0E498391C6B10B300A9138C /* AP_SplitViewSubClass.m in Sources */,
+				F07C24F21C58BF5200C40F75 /* KindleView.m in Sources */,
+				F0CFB2461C88417A0068449D /* Author.m in Sources */,
+				F0CFB2451C88417A0068449D /* Author+CoreDataProperties.m in Sources */,
+				F0888D261C71F19700C1632D /* EmptyViewDrawing.m in Sources */,
+				F01574BC1C54A361007CCECF /* main.m in Sources */,
+				F0CFB2401C8841790068449D /* Note.m in Sources */,
+				F01574DF1C54A5CA007CCECF /* InkedMargin.xcdatamodeld in Sources */,
+				F0CFB2481C88417A0068449D /* Book.m in Sources */,
+				F01574B91C54A361007CCECF /* AppDelegate.m in Sources */,
+				F04D7B431C5F3453008ECDF1 /* APTableCellView.m in Sources */,
+				F0E51BD41C72D70D003188A5 /* FirstTimeSyncController.m in Sources */,
+				F01574D71C54A4FE007CCECF /* PersistClass.m in Sources */,
+				F01574D91C54A4FE007CCECF /* EECoreStack.m in Sources */,
+				F0CFB2421C8841790068449D /* TimeStamp.m in Sources */,
+				F0CFB2441C88417A0068449D /* Group.m in Sources */,
+				F01574FB1C54A975007CCECF /* HighlightTableController.m in Sources */,
+				F04D7B461C5F36A7008ECDF1 /* APTableView.m in Sources */,
+				F07267581C5C88DA00F35571 /* AP_SplitController.m in Sources */,
+				F01574D81C54A4FE007CCECF /* AP_TextExtract.m in Sources */,
+				F08959711C5526B2007909A3 /* MyStyleKitName.m in Sources */,
+				F0CFB2471C88417A0068449D /* Book+CoreDataProperties.m in Sources */,
+				F06EAA611C6871E4005ED2D0 /* APTextViewSubClass.m in Sources */,
+				F0CFB24A1C88417A0068449D /* Highlight.m in Sources */,
+				F0CFB23F1C8841790068449D /* Note+CoreDataProperties.m in Sources */,
+				F0CFB2431C88417A0068449D /* Group+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F01574C31C54A361007CCECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F01574C41C54A361007CCECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F01574C61C54A361007CCECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InkedMargin/InkedMargin.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InkedMargin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alokpandey.InkedMargin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F01574C71C54A361007CCECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InkedMargin/InkedMargin.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = InkedMargin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alokpandey.InkedMargin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F01574AF1C54A361007CCECF /* Build configuration list for PBXProject "InkedMargin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01574C31C54A361007CCECF /* Debug */,
+				F01574C41C54A361007CCECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F01574C51C54A361007CCECF /* Build configuration list for PBXNativeTarget "InkedMargin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01574C61C54A361007CCECF /* Debug */,
+				F01574C71C54A361007CCECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F01574DD1C54A5CA007CCECF /* InkedMargin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F01574DE1C54A5CA007CCECF /* InkedMargin.xcdatamodel */,
+			);
+			currentVersion = F01574DE1C54A5CA007CCECF /* InkedMargin.xcdatamodel */;
+			path = InkedMargin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F01574AC1C54A361007CCECF /* Project object */;
+}
