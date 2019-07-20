@@ -1,7 +1,7 @@
 # inkedMargin
 Kindle Parser for macOS
 
-![screen shot 2017-04-16 at 6 09 46 pm](https://cloud.githubusercontent.com/assets/15965754/25071274/79467f44-22d0-11e7-97fb-f455b8b169fb.png)
+![screen shot 2017-04-16 at 6 09 46 pm](https://github.com/alokpndy/inkedMargin/blob/master/Screenshot%20app.png)
 
 
 
