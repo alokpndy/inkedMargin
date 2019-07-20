@@ -15,6 +15,7 @@ UK English, US English, Portuguese, Russian, Deutsch, Français, Español, Itali
 ##### Note: Please allow installation from unidentified developer from System Preference. 
 1. Clone project to local drive and use Xcode to create archive.
 2. Download pre release app from [here](https://github.com/alokpndy/inkedMargin/files/924333/InkedMargin.app.zip)
+3. Download v0.2 from [here](https://github.com/alokpndy/inkedMargin/releases/download/v0.2-alpha/InkedMargin.app.zip)
 
 # How to use the app.
 1. On first launch, you will be greeted with a dialog to connect your Kindle to your Mac. 
