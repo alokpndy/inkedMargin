@@ -9,7 +9,7 @@
 #import "HighlightTableController.h"
 #import "APTableCellView.h"
 #import "Highlight.h"
-#import "MyStyleKitName.h"
+
 #import "AppDelegate.h"
 
 
@@ -39,8 +39,8 @@
     
     // setting font size of NSTextView for user Note
     [_noteView setFont:[NSFont systemFontOfSize:13]];
-    [_favoriteButtonDummy setImage:[MyStyleKitName imageOfFavouriteIconMainWithFrame:[_favoriteButtonDummy bounds] isStarActive:YES]];
-    [_favoriteButtonBound setImage:[MyStyleKitName imageOfFavouriteIconMainWithFrame:[_favoriteButtonBound bounds] isStarActive:NO]];
+    [_favoriteButtonDummy setImage: [NSImage imageNamed:@"heart"]];
+    [_favoriteButtonBound setImage: [NSImage imageNamed:@"emptyHeart"]];
     showAnimationWhenUnfavorites = NO;
     
     
@@ -80,9 +80,9 @@ object change:(NSDictionary *)change context:(void *)context
         for (Highlight *highlight in selectedHilights) {
             [highlight setHighlightToDeleteOrPutBack];
         }
-        [_authorArrayController rearrangeObjects];
-        [_bookArrayController rearrangeObjects];
-        [_highlightArrayController rearrangeObjects];
+        [self->_authorArrayController rearrangeObjects];
+        [self->_bookArrayController rearrangeObjects];
+        [self->_highlightArrayController rearrangeObjects];
     }];
     [_highlightArrayController didChangeValueForKey:@"markHighlightToDelete"];
     
@@ -105,9 +105,9 @@ object change:(NSDictionary *)change context:(void *)context
             context.allowsImplicitAnimation = YES;
             [_highlightTableView removeRowsAtIndexes:_highlightTableView.selectedRowIndexes withAnimation:NSTableViewAnimationEffectFade];
         } completionHandler:^{ [hilight setHighlightAsNotFavorite];
-            [_highlightArrayController rearrangeObjects];
-            [_bookArrayController rearrangeObjects];
-            [_authorArrayController rearrangeObjects];}];
+            [self->_highlightArrayController rearrangeObjects];
+            [self->_bookArrayController rearrangeObjects];
+            [self->_authorArrayController rearrangeObjects];}];
         
     }else{
         [hilight setHighlightAsNotFavorite];
@@ -158,7 +158,7 @@ object change:(NSDictionary *)change context:(void *)context
         
         APTableCellView *cellView = [_highlightTableView makeViewWithIdentifier:@"highlightGroup" owner:self];
         NSImage *image = [[NSImage alloc]init];
-        image = [MyStyleKitName imageOfFavouriteIconMainWithFrame:cellView.favImageView.bounds isStarActive:YES];
+        image = [NSImage imageNamed:@"heart"];
         [image setTemplate:YES];
         [cellView.favImageView setImage:image];
         

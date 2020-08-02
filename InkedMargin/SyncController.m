@@ -9,7 +9,7 @@
 #import "SyncController.h"
 #import "PersistClass.h"
 #import "AppDelegate.h"
-#import "MyStyleKitName.h"
+
 
 @interface SyncController()
 {
@@ -118,10 +118,10 @@
     [alert beginSheetModalForWindow:[NSApp mainWindow] completionHandler:^(NSModalResponse returnCode) {
         if (returnCode == 1001) {
             //Ok
-            [[NSApp mainWindow] endSheet:alert.window];
+            [[NSApp mainWindow] endSheet:self->alert.window];
             [self syncButtonAction:self];
         }else if (returnCode == 1000) {
-            [[NSApp mainWindow] endSheet:alert.window];
+            [[NSApp mainWindow] endSheet:self->alert.window];
         }
     }];
 }

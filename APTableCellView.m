@@ -7,7 +7,7 @@
 //
 
 #import "APTableCellView.h"
-#import "MyStyleKitName.h"
+
 
 @implementation APTableCellView
 

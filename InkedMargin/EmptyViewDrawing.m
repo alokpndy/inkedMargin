@@ -7,7 +7,7 @@
 //
 
 #import "EmptyViewDrawing.h"
-#import "MyStyleKitName.h"
+
 
 @implementation EmptyViewDrawing
 
@@ -15,7 +15,7 @@
     [super drawRect:dirtyRect];
     
     // Drawing code here.
-    [MyStyleKitName drawEmptyDatabaseView];
+    
 }
 
 @end

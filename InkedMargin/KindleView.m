@@ -7,7 +7,7 @@
 //
 
 #import "KindleView.h"
-#import "MyStyleKitName.h"
+
 
 @implementation KindleView
 
@@ -15,7 +15,7 @@
     [super drawRect:dirtyRect];
     
     // Drawing code here.
-    [MyStyleKitName drawDropViewOnKindleConnectedWithFrame:self.bounds];
+    
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "MyStyleKitName.h"
+
 #import "FirstTimeSyncController.h"
 #import "TimeStamp.h"
 #import "AP_SplitViewSubClass.h"
@@ -117,38 +117,25 @@
 
 #pragma mark - Window Apperance
 -(void)windowApperance{
-    self.window.backgroundColor = [NSColor colorWithCalibratedWhite:0.936 alpha:1.000];
     self.window.titleVisibility = NSWindowTitleHidden;
-    self.window.titlebarAppearsTransparent = YES;
-    NSImage *imageOne = [[NSImage alloc]init];
-    imageOne = [MyStyleKitName imageOfAuthorIcon];
-    [imageOne setTemplate:YES];
-    [_allButton setImage:imageOne];
+
+    //[_allButton setImage: [NSImage imageNamed:@"home"]];
     
-    NSImage *imageTwo = [[NSImage alloc]init];
-    imageTwo = [MyStyleKitName imageOfRecentelyAddedIcon];
-    [imageTwo setTemplate:YES];
-    [_clockButton setImage:imageTwo];
+    //[_clockButton setImage:[NSImage imageNamed:@"clock"]];
     
-    NSImage *imageThree = [[NSImage alloc]init];
-    imageThree = [MyStyleKitName imageOfStarSideBarIcon];
-    [imageThree setTemplate:YES];
-    [_trashButton setImage:imageThree];
+
+//    [_trashButton setImage:[NSImage imageNamed:@"archive"]];
     
-    NSImage *imageFour = [[NSImage alloc]init];
-    imageFour = [MyStyleKitName imageOfTrashSideBarIcon];
-    [imageFour setTemplate:YES];
-    [_favButton setImage:imageFour];
+    [_favButton setImage:[NSImage imageNamed:@"heart"]];
+    
+    if (@available(macOS 10.14, *)) {
+        _noteView.usesAdaptiveColorMappingForDarkAppearance = true;
+    } else {
+        // Fallback on earlier versions
+    }
     
     
-    [[_noteSplitView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:1.000 alpha:1.000].CGColor];
-    
-    [[_authorSplitView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:0.936 alpha:1.000].CGColor];
-    [[_hilightSplitView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:1.00 alpha:1.000].CGColor];
-    [[_hilightTextViewScrollView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:1 alpha:1.000].CGColor];
-    
-    [_authorTable setBackgroundColor:[NSColor colorWithCalibratedWhite:0.936 alpha:1.000]];
-    [_bookTable setBackgroundColor:[NSColor colorWithCalibratedWhite:0.936 alpha:1.000]];
+   
     
     
     
