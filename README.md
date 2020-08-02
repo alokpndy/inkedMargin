@@ -3,7 +3,7 @@ Kindle Parser for macOS
 
 ![screen shot 2017-04-16 at 6 09 46 pm](https://github.com/alokpndy/inkedMargin/blob/master/Screenshot%20app.png)
 
-
+# UPDATE: Version 0.3 - support Dark Mode.
 
 # Introduction
 inkedMargin is a tool to import notes and highlights from Kindle devices. This started as a personal project while learning Objective C and never intended to be made public hence bugs can be found creeping around.
@@ -14,7 +14,7 @@ UK English, US English, Portuguese, Russian, Deutsch, Français, Español, Itali
 # Installation
 ##### Note: Please allow installation from unidentified developer from System Preference. 
 1. Clone project to local drive and use Xcode to create archive.
-2. Download v0.2 from [here](https://github.com/alokpndy/inkedMargin/releases/download/v0.2-alpha/InkedMargin.app.zip)
+2. Download v0.3 from [here](https://github.com/alokpndy/inkedMargin/files/5012255/InkedMargin.app.zip)
 
 # How to use the app.
 1. On first launch, you will be greeted with a dialog to connect your Kindle to your Mac. 
