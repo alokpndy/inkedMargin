@@ -294,13 +294,13 @@
                                            value:[NSFont systemFontOfSize:18 weight:NSFontWeightRegular]
                                            range:NSMakeRange(0, [book.title length])];
                         [bodyString setAlignment:NSLeftTextAlignment range:NSMakeRange(0, [book.title length])];
-                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor colorWithCalibratedWhite:0.079 alpha:1.000] range:NSMakeRange(0, [book.title length])];
+                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor textColor] range:NSMakeRange(0, [book.title length])];
                         // author attributed text
                         [bodyString addAttribute:NSFontAttributeName
                                            value:[NSFont systemFontOfSize:11.0]
                                            range:NSMakeRange(book.title.length, [author.name length]+4)];
                         [bodyString setAlignment:NSLeftTextAlignment range:NSMakeRange(book.title.length, [author.name length]+4)];
-                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor colorWithCalibratedWhite:0.079 alpha:1.000] range:NSMakeRange(book.title.length, [author.name length]+4)];
+                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor textColor] range:NSMakeRange(book.title.length, [author.name length]+4)];
                         
                         // date attributed text
                         NSInteger locationNiddleLast = [fullDescription length]-[highlight.body length];
@@ -310,7 +310,7 @@
                                            value:[NSFont systemFontOfSize:11.0]
                                            range:NSMakeRange(locationOfStartOfdate, dateLenght)];
                         [bodyString setAlignment:NSLeftTextAlignment range:NSMakeRange(locationOfStartOfdate, dateLenght)];
-                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor colorWithCalibratedWhite:0.079 alpha:1.000] range:NSMakeRange(locationOfStartOfdate, dateLenght)];
+                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor textColor] range:NSMakeRange(locationOfStartOfdate, dateLenght)];
                         
                         
                         // body attributed text
@@ -318,7 +318,7 @@
                                            value:[NSFont systemFontOfSize:14 weight:NSFontWeightRegular]
                                            range:NSMakeRange(locationNiddleLast, [highlight.body length])];
                         [bodyString setAlignment:NSLeftTextAlignment range:NSMakeRange(locationNiddleLast, [highlight.body length])];
-                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor colorWithCalibratedWhite:0.079 alpha:1.000] range:NSMakeRange(locationNiddleLast, [highlight.body length])];
+                        [bodyString addAttribute:NSForegroundColorAttributeName value:[NSColor textColor] range:NSMakeRange(locationNiddleLast, [highlight.body length])];
                         
                         
                         // settng paragraph style for body

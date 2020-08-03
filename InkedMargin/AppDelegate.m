@@ -117,9 +117,9 @@
 
 #pragma mark - Window Apperance
 -(void)windowApperance{
-    self.window.backgroundColor = [NSColor colorWithCalibratedWhite:0.936 alpha:1.000];
+   
     self.window.titleVisibility = NSWindowTitleHidden;
-    self.window.titlebarAppearsTransparent = YES;
+   
     NSImage *imageOne = [[NSImage alloc]init];
     imageOne = [MyStyleKitName imageOfAuthorIcon];
     [imageOne setTemplate:YES];
@@ -140,15 +140,6 @@
     [imageFour setTemplate:YES];
     [_favButton setImage:imageFour];
     
-    
-    [[_noteSplitView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:1.000 alpha:1.000].CGColor];
-    
-    [[_authorSplitView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:0.936 alpha:1.000].CGColor];
-    [[_hilightSplitView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:1.00 alpha:1.000].CGColor];
-    [[_hilightTextViewScrollView layer]setBackgroundColor:[NSColor colorWithCalibratedWhite:1 alpha:1.000].CGColor];
-    
-    [_authorTable setBackgroundColor:[NSColor colorWithCalibratedWhite:0.936 alpha:1.000]];
-    [_bookTable setBackgroundColor:[NSColor colorWithCalibratedWhite:0.936 alpha:1.000]];
     
     
     
@@ -205,36 +196,11 @@
 #pragma save main context only
 -(void)saveMainContext:(id)userInfo
 {
-    NSRange range;
-    // End editing to commit the last changes
-    if ( [[[self window] firstResponder] isKindOfClass:[NSTextView class]])
-    {
-        range = [_noteView selectedRange];
-        [[NSApp keyWindow] endEditingFor: nil];
-        
-        // saving main context
-        NSError *error = nil;
-        [self.mainContext save:&error];
-        if(error){
-            NSLog(@"ERROR SAVING MAIN CONTEXT %@; : %@", [error localizedDescription], [error userInfo]);
-        }
-        // Now restore the field editor, if any.
-        if (_noteView) {
-            
-            [[NSApp keyWindow] makeFirstResponder: _noteView];
-            [_noteView setSelectedRange: range];
-        }
-        
-    }
-    
-    
-    // saving main context if NSTextView is not first reponder
-    // two different saving is to aid Table view or NSTextVuew not loosing focus
+   
     NSError *error = nil;
     [self.mainContext save:&error];
-    if(error){
-        NSLog(@"ERROR SAVING MAIN CONTEXT %@; : %@", [error localizedDescription], [error userInfo]);
-    }
+
+   
     
 }
 

@@ -29,7 +29,7 @@
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.alok.WordNote" in the user's Application Support directory.
     
     NSURL *appSupportURL = [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
-    return [appSupportURL URLByAppendingPathComponent:@"com.alok.InkedMargin"];
+    return [appSupportURL URLByAppendingPathComponent:@"com.alokkumar.InkedMargin2"];
 }
 
 
